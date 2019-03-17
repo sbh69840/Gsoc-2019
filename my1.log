@@ -1,0 +1,47 @@
+2019-03-17 12:39:22,660 - INFO       - The program started at Sun Mar 17 12:39:22 2019
+2019-03-17 12:39:22,661 - INFO       - uname_result(system='Windows', node='DESKTOP-RA7JM7K', release='10', version='10.0.17134', machine='AMD64', processor='Intel64 Family 6 Model 158 Stepping 9, GenuineIntel')
+2019-03-17 12:39:22,807 - INFO       - Packages used in python 3.6.6rc1 are :
+2019-03-17 12:39:33,950 - INFO       -     umap, 0.2.5
+2019-03-17 12:39:34,818 - INFO       -     sklearn.decomposition.PCA, 0.20.0
+2019-03-17 12:39:34,818 - INFO       -     numpy, 1.15.2
+2019-03-17 12:39:35,367 - INFO       -     zarr, 2.2.0
+2019-03-17 12:39:35,368 - INFO       -     random, current python
+2019-03-17 12:39:35,368 - INFO       -     time, current python
+2019-03-17 12:39:35,368 - INFO       -     os, current python
+2019-03-17 12:39:35,601 - INFO       -     h5py, 2.8.0
+2019-03-17 12:39:37,290 - INFO       -     matplotlib.pyplot.plt, 3.0.0
+2019-03-17 12:39:39,241 - INFO       -     seaborn, 0.9.0
+2019-03-17 12:39:42,326 - INFO       -     bcolz, 1.2.1
+2019-03-17 12:39:42,326 - INFO       -     pandas, 0.23.4
+2019-03-17 12:39:43,139 - INFO       -     scikit-allel, 1.2.0
+2019-03-17 12:39:43,140 - INFO       -     inspect, current python
+2019-03-17 12:39:43,140 - INFO       - Seed used to generate the coordinates are :
+2019-03-17 12:39:43,140 - INFO       -     random.seed(345)
+2019-03-17 12:39:43,140 - INFO       -     np.random.seed(345)
+2019-03-17 12:39:43,149 - INFO       - Converting the vcf.gz file to zarr file:
+2019-03-17 12:39:43,151 - ERROR      -     zarr folder doesn't exist, creating one.
+2019-03-17 12:44:31,689 - INFO       - Time taken to convert data : 288.5372965335846 sec
+2019-03-17 12:44:31,692 - INFO       - Time taken to load zarr data : 0.002002716064453125 sec
+2019-03-17 12:44:31,693 - INFO       -     Data converted and output displayed under output code 1
+2019-03-17 12:44:31,703 - INFO       - Displaying top 5 rows of affy_samples.20141118.panel file
+2019-03-17 12:44:31,719 - INFO       -     Under the output code 2
+2019-03-17 12:44:31,895 - INFO       - Converting the calldata/GT to allel.GenotypeChunkedArray(data)...
+2019-03-17 12:44:32,073 - INFO       - Converting genotype data to 2-dim matrix using allel.GenotypeChunkedArray.to_n_alt()...
+2019-03-17 12:45:42,258 - INFO       - Plotting pairwise LD using plot_ld((gn, title)) under output code 3
+2019-03-17 12:45:42,677 - INFO       - random downsampling the genotype data...
+2019-03-17 12:45:54,077 - INFO       - Plotting pairwise LD after rnd downsampling using plot_ld((gn, title)) under output code 4
+2019-03-17 12:47:45,276 - INFO       - removing unwanted data using ld_prune((gn, size, step, threshold=0.1, n_iter=1)) under output code 5
+2019-03-17 12:47:51,746 - INFO       - Plotting pairwise LD after pruning using plot_ld((gn, title)) under output code 6
+2019-03-17 12:47:52,327 - INFO       - calling sklearn.decomposition.PCA(n_components=2)...
+2019-03-17 12:47:52,328 - INFO       -     calling fit_transform on the PCA output...
+2019-03-17 12:48:03,965 - INFO       - Plotting PCA on a set of population groups under output code 7...
+2019-03-17 12:48:05,461 - INFO       - Plotting PCA on all population groups under output code 8...
+2019-03-17 12:48:06,322 - INFO       - Calling umap.UMAP(n_neighbors=30,min_dist=0.8)
+2019-03-17 12:48:06,639 - INFO       - calling fit_transform(data) on output of UMAP...
+2019-03-17 12:48:41,898 - INFO       - Plotting UMAP on a set of population groups under output code 9...
+2019-03-17 12:48:43,017 - INFO       - Plotting PCA on all population groups under output code 10...
+2019-03-17 12:48:43,839 - INFO       -     data conversion time: 288.5372965335846 sec 
+2019-03-17 12:48:43,839 - INFO       -     data load time: 0.002002716064453125 sec
+2019-03-17 12:48:43,840 - INFO       -     PCA time: 10.878305673599243 sec
+2019-03-17 12:48:43,840 - INFO       -     umap time: 0.002002716064453125 sec
+2019-03-17 12:48:43,840 - INFO       -     total program time: 561.180104970932 sec
